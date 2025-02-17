@@ -3,107 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>Fluffy - VRChat Avatar Commissions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        section {
+            padding: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background: rgba(0, 123, 255, 0.7);
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: rgba(0, 123, 255, 1);
+        }
+    </style>
 </head>
 <body>
-    <div class="floating-shapes">
-        <div style="top: 10%; left: 10%; animation-delay: 0s;"></div>
-        <div style="top: 20%; right: 20%; animation-delay: 2s;"></div>
-        <div style="bottom: 30%; left: 30%; animation-delay: 4s;"></div>
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="glass-container" data-aos="fade-up">
-            <h1>Pugls</h1>
-            <h2>Full Stack Developer</h2>
-            <p>Creating beautiful web experiences</p>
+    <header>
+        <h1>Fluffy VRChat Avatars</h1>
+        <p>Custom VRChat avatar commissions with a sleek Glass UI experience.</p>
+    </header>
+    
+    <section id="showcase">
+        <h2>Our Work</h2>
+        <div class="gallery">
+            <img src="avatar1.png" alt="VRChat Avatar Example">
+            <img src="avatar2.png" alt="VRChat Avatar Example">
         </div>
     </section>
-
-    <section id="about" class="about">
-        <div class="glass-container profile-container" data-aos="fade-right">
-            <div class="profile-pic">
-                <img src="460280779_492424237118413_8393555978327286489_n.jpg" alt="Profile Picture">
-            </div>
-            <div class="profile-text" data-aos="fade-left" data-aos-delay="200">
-                <h2>About Me</h2>
-                <p>I'm a passionate developer who loves creating cool looking websites.</p>
-            </div>
-        </div>
+    
+    <section id="pricing">
+        <h2>Pricing & Ordering</h2>
+        <p>Get a fully custom VRChat avatar tailored to your needs.</p>
+        <button id="payButton">Order Now with Stripe</button>
     </section>
-
-    <section id="skills" class="skills">
-        <h2 class="section-title" data-aos="fade-up">My Skills</h2>
-        <div class="skills-container">
-            <div class="skill-card glass-container" data-aos="flip-left">
-                <i class="fab fa-html5"></i>
-                <h3>HTML5</h3>
-                <div class="skill-bar" data-percentage="93">
-                    <div class="progress"></div>
-                </div>
-            </div>
-            <div class="skill-card glass-container" data-aos="flip-left" data-aos-delay="100">
-                <i class="fab fa-css3-alt"></i>
-                <h3>CSS3</h3>
-                <div class="skill-bar" data-percentage="85">
-                    <div class="progress"></div>
-                </div>
-            </div>
-            <div class="skill-card glass-container" data-aos="flip-left" data-aos-delay="200">
-                <i class="fab fa-js"></i>
-                <h3>JavaScript</h3>
-                <div class="skill-bar" data-percentage="75">
-                    <div class="progress"></div>
-                </div>
-            </div>
-            <div class="skill-card glass-container" data-aos="flip-left" data-aos-delay="300">
-                <i class="fab fa-microsoft"></i>
-                <h3>C#</h3>
-                <div class="skill-bar" data-percentage="95">
-                    <div class="progress"></div>
-                </div>
-            </div>
-            <div class="skill-card glass-container" data-aos="flip-left" data-aos-delay="400">
-                <i class="fas fa-terminal"></i>
-                <h3>Batch</h3>
-                <div class="skill-bar" data-percentage="80">
-                    <div class="progress"></div>
-                </div>
-            </div>
-        </div>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Have questions? Contact us on Discord: <a href="https://discord.gg/https://discord.gg/YSggNbAEar">Join Here</a></p>
     </section>
-
-    <section id="projects" class="projects">
-        <h2 class="section-title" data-aos="fade-up">My Projects</h2>
-        <div class="projects-container">
-            <div class="glass-container project-card" data-aos="fade-right">
-                <h3>PugOS</h3>
-                <p>A fully functional html, css, and js, IDE with built in app creation</p>
-            </div>
-            <div class="glass-container project-card" data-aos="fade-up">
-                <h3>Doubloon Clicker</h3>
-                <p>A doubloon clicker game based off of highseas.</p>
-            </div>
-            <div class="glass-container project-card" data-aos="fade-left">
-                <h3>Sigma Visualizer</h3>
-                <p>A simple Audio Visualizer Made using html, css, and js.</p>
-            </div>
-        </div>
+    
+    <section id="policies">
+        <h2>Policies</h2>
+        <h3>Refund & Cancellation Policy</h3>
+        <p>Due to the custom nature of VRChat avatars, all sales are final. Refunds will only be issued if work has not yet started.</p>
+        
+        <h3>Terms & Conditions</h3>
+        <p>By commissioning Fluffy, you agree that all avatars are for personal use only unless otherwise stated. Redistribution or resale is prohibited.</p>
+        
+        <h3>Privacy Policy</h3>
+        <p>We do not collect or share personal data. All transactions are securely processed via Stripe.</p>
     </section>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script.js"></script>
+    
+    <script>
+        document.getElementById('payButton').addEventListener('click', () => {
+            window.location.href = 'https://buy.stripe.com/test_XXXXXXXX';
+        });
+    </script>
 </body>
 </html>
